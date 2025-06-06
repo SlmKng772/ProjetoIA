@@ -1,4 +1,3 @@
-// backend/controllers/chatController.js
 const axios = require('axios');
 const { GEMINI_API_KEY } = require('../config/api.config');
 

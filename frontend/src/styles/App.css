@@ -1,5 +1,4 @@
 :root {
-  /* Light Mode (padrão) */
   --primary-light: #4361ee;
   --bg-light: #f5f7fb;
   --text-light: #333;
@@ -7,7 +6,6 @@
   --message-user-light: #4361ee;
   --input-bg-light: white;
 
-  /* Dark Mode */
   --primary-dark: #7b4cff;
   --bg-dark: #1a1a2e;
   --text-dark: #e6e6e6;
@@ -16,7 +14,6 @@
   --input-bg-dark: #0f3460;
 }
 
-/* Aplica as cores conforme o tema */
 [data-theme="light"] {
   --primary: var(--primary-light);
   --bg: var(--bg-light);
@@ -78,7 +75,6 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Efeito de digitando... */
 .typing-indicator {
   display: flex;
   padding: 10px 15px;
@@ -106,12 +102,11 @@ body {
   30% { transform: translateY(-5px); }
 }
 
-/* Desabilita input durante carregamento */
 input:disabled, button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
 }
-/* Cores modernas e tema suave */
+
 :root {
   --primary: #4361ee;
   --bot-bg: #f8f9fa;
@@ -120,7 +115,6 @@ input:disabled, button:disabled {
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout principal */
 .chat-container {
   max-width: 800px;
   margin: 20px auto;
@@ -133,19 +127,17 @@ input:disabled, button:disabled {
   flex-direction: column;
 }
 
-/* Cabeçalho estilizado */
 .chat-header {
-  background: var(--primary);  /* Mantém sua cor primária */
+  background: var(--primary); 
   color: white;
-  padding: 8px 10px;  /* Reduzi o padding */
+  padding: 8px 10px; 
   text-align: center;
-  font-size: 1.1rem;  /* Tamanho menor que o original (1.5rem) */
-  font-weight: 500;    /* Semi-bold para destacar */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* Sombra sutil */
-  position: relative;  /* Para o efeito de destaque */
+  font-size: 1.1rem; 
+  font-weight: 500;   
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  position: relative;  
 }
 
-/* Efeito de destaque na borda inferior */
 .chat-header::after {
   content: "";
   position: absolute;
@@ -156,7 +148,6 @@ input:disabled, button:disabled {
   background: rgba(255,255,255,0.3);
 }
 
-/* Adaptação para mobile */
 @media (max-width: 600px) {
   .chat-header {
     font-size: 1rem;
@@ -164,7 +155,6 @@ input:disabled, button:disabled {
   }
 }
 
-/* Área de mensagens */
 .messages-container {
   flex: 1;
   padding: 20px;
@@ -172,7 +162,6 @@ input:disabled, button:disabled {
   background: #f5f7fb;
 }
 
-/* Estilo das mensagens */
 .message {
   max-width: 70%;
   margin-bottom: 15px;
@@ -196,7 +185,6 @@ input:disabled, button:disabled {
   border-top-right-radius: 4px;
 }
 
-/* Área de input */
 .input-container {
   display: flex;
   padding: 15px;
@@ -235,13 +223,11 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* Animações */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Scrollbar personalizada */
 .messages-container::-webkit-scrollbar {
   width: 8px;
 }
